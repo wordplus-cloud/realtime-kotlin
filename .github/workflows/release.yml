@@ -31,7 +31,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # Its default packages include 'tools', which Google's repository no longer has (the first 1.0.0 run failed on it,
+      # 2026-11-19), so only platform-tools: Gradle fetches the platform the builds compile against.
       - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
 
       - name: The core tests
         run: ./gradlew test --console=plain
