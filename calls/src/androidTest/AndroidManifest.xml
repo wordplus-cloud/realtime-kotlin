@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- LiveCallsTest's servers are on this machine, over plain http. -->
+    <application android:usesCleartextTraffic="true">
+        <!-- What asks the system for the screen in ScreenShareTest, as an app's activity does. -->
+        <activity
+            android:name="cloud.wordplus.realtime.calls.ScreenAskActivity"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+.gradle/
+build/
+.kotlin/
+local.properties
+# The example app's Firebase project, your own (docs/android/example.md)
+example/app/google-services.json

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- The call screen: its own task, so a call answered from the lock screen
+             does not land on top of whatever the app was showing, and left out of recents, because a finished call is
+             not a place to go back to. -->
+        <activity
+            android:name="cloud.wordplus.realtime.ui.calls.CallsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:supportsPictureInPicture="true"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|uiMode"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- An app's own ringing view (CallScreen.Pieces.ringing), as our call screen rings: full screen, over the lock
+             screen, out of recents. -->
+        <activity
+            android:name="cloud.wordplus.realtime.ui.CallRingActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- Every state of the call screen with no call, to look at a change (CallScreen.preview). -->
+        <activity
+            android:name="cloud.wordplus.realtime.ui.CallScreenPreviewActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.Light" />
+    </application>
+</manifest>

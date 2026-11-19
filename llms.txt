@@ -1,0 +1,23 @@
+# cloud.wordplus:realtime for Kotlin
+
+> WordPlus Cloud's realtime SDK for Android and other Kotlin apps: rooms with emit, emitWithAck and volatile, events as flows, presence and who is online, history, what the app's server sends the user, calls between a phone and a browser, group calls, live streams, and the native call and stream screens of Better Messages. Rooms are sealed end to end, calls between two people are encrypted end to end, group calls when their rule says encrypt, and live streams are not. Three libraries: cloud.wordplus:realtime (plain Kotlin), realtime-calls and realtime-ui (Android). The app's server is the website's own, with @wordplus/realtime, wordplus/realtime-php or wordplus-realtime.
+
+## Docs
+
+All of them, with the guides of the server packages and every other, on the web: https://docs.wordplus.cloud/llms.txt.
+
+- [Getting started](docs/android/getting-started.md): the libraries, installing, the server knowing the app's user, connecting, a first room, the connection's state (rt.state, rt.onState, error, moved, signed_out), another namespace of the realtime server (RealtimeOptions namespace and auth)
+- [Rooms](docs/android/rooms.md): the room rule, joining, many rooms in one request, events and their meta, once and off, flows decoded, history after a reconnect
+- [Presence and online status](docs/android/presence.md): the presence rule, a presence room's members, counts, rt.online, the directory, and the views drawn from what the app gives them (OnlineList, PersonRow, RowAction, OnlineCount, Avatar, PresenceDot, TypingDots, ActivityIndicator)
+- [Sending from your server](docs/android/sending.md): to a room, except the app's own tab, to a user, asking the app, webhooks
+- [Events from the app](docs/android/events.md): the chat rule, emit, emitWithAck, volatile and its emitWithAck, kotlinx.serialization data, the web chat's events
+- [Calls](docs/android/calls.md): the call rules (side.role, admin, encrypt), a token from a route of your own (rt.startCall, rt.joinGroupCall, call.ref, call.add with a token), the call screen, ringing a locked phone and a closed app with Telecom and FCM (SystemCalls and its options), calls of your own (remoteMedia, onError, flipCamera, frontCamera, preferCamera, microphoneLevel, the audio route, onCall, onGroup, onPath, people, may, off), calls on your own signalling (calls.call(over = …), CallTransport, Better Messages' P2PCallTransport), adding people (CallInvite, its onState, canCancel and cancel, group.invites, group.onInvite, CallScreen.addPerson), group calls (setCamera, setMicrophone, group.me, group.quality, group.onQuality, group.onError, group.waiting, joining again), sharing the screen (ScreenShare.permissionIntent, setScreenShare, sharingScreen, onScreenShare, call.remoteScreen), the host (the call screen's menus, GroupCall.moderate and the spotlight, ending for everyone from the server), recording (startRecording and stopRecording, canRecord, isRecording, onRecording, and what the call screen draws of it), speakers and listeners, the server's calls, end reasons
+- [Live streams](docs/android/streams.md): the stream rule and its settings, LiveStreamScreen, watching (rt.joinStream with a token from a route of your own, video = false and watch(), waiting, audience, qualities, setQuality, stats), going live, setScreenShare, guests on stage (hand, canAskStage, joinStage, declineStage, leaveStage, and what LiveStreamScreen draws of it), keeping the chat, the server's streams, stream webhooks, not end to end encrypted, refusals
+- [Encryption and your users](docs/android/encryption.md): what is sealed, calls and live streams, how the app gets its keys, where the keys are kept (the day keys encrypted with a keystore key for SystemCalls), the directory
+- [Customizing the screens](docs/android/customizing.md): the call screen's look, a piece of the app's own, its whole code copied: CallScreen.pieces, CallControl.own, GroupVideoView, the cloud.wordplus.realtime-ui Gradle plugin (wordplusUiAdd, Diff, Update, Accept)
+- [Shipping](docs/android/shipping.md): HTTPS, permissions, the background, push and Telecom (Firebase, the service account), Google Play's forms, R8
+- [The example app](docs/android/example.md): the API demo in Jetpack Compose, and its end-to-end proof
+
+## For agents
+
+- [Skill](skills/wordplus-realtime-android/SKILL.md): which feature fits, the workflow, a template, rules, checks

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The shop server and the local realtime server run on the Mac over plain HTTP (test/native/serve.mjs in realtime-js,
+     reached through `adb reverse`, or at 10.0.2.2). A shipped app talks HTTPS only and needs none of this. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

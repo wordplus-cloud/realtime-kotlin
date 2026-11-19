@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds only: the call screen preview opens from adb, for a script or an AI agent to look at a state
+     (docs/android/customizing.md, "Checking a change"). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <activity android:name="cloud.wordplus.realtime.ui.CallScreenPreviewActivity" android:exported="true" tools:replace="android:exported" />
+    </application>
+</manifest>

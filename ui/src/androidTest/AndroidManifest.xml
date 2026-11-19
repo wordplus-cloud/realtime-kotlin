@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- GroupOwnTileTest's and CallScreenCloseTest's servers are on this machine, over plain http. -->
+    <application android:usesCleartextTraffic="true">
+        <!-- An app's own screens, for what comes back when the call screen closes (CallScreenCloseTest). -->
+        <activity
+            android:name="cloud.wordplus.realtime.ui.OwnTaskHost"
+            android:exported="false" />
+        <activity
+            android:name="cloud.wordplus.realtime.ui.EmptyAffinityHost"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:taskAffinity="" />
+    </application>
+</manifest>

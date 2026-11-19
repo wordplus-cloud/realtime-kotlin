@@ -1,0 +1,116 @@
+{
+  "note": "Tokens and requests made by @wordplus/realtime's own build with the test keys of its spec/vectors.json, each request taken by its authorizeCall(). See CallTokensTest.",
+  "call": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQmpZV3hzSWl3aVkyRnNiQ0k2SW5OMWNIQnZjblE2TVRjaUxDSnBaQ0k2SWpRd1kxaG5PSEpzV1VWRGJFMXpMVmwzVlU5Mklpd2ljM1ZpSWpvME1pd2ljbTlzWlNJNkltTmhiR3hsY2lJc0luUjVjR1VpT2lKaGRXUnBieUlzSW5Sdklqb3pOQ3dpYVc1bWJ5STZleUp1WVcxbElqb2lRVzV1SWl3aVgzSnBibWNpT2lKcmFXOUlkMUk0YnpocFFsSXhSSFEzTkRaU09EWk5lVzgxTW1WQmFsaHJRVFp1VFZSVk9HTlBRamxSSW4xOS56Z2ROd1YwUDFQRHRtN3A1NEZTVjdKUVdTT3YzWHdYWEdjSXdOVHNhZVo0IiwiZXhwIjoxNzk0MjMyMTk5LCJjYWxsIjoic3VwcG9ydDoxNyIsImlkIjoiNDBjWGc4cmxZRUNsTXMtWXdVT3YiLCJ0byI6MzQsInR5cGUiOiJhdWRpbyIsImtleSI6ImJmZTk0MjYzNmRmZTBhOTE2NTgzNmIwYTdhYTJiOWQ3MzI3ZTE3MTA3NDYxZmE1MTc1ZTFlNjQzMDQwNTkzNWMiLCJtZWRpYV9rZXkiOiIwSVdDTDJuZ29rcmNEVC1xVHdadmpubWdEcE03Z1puMkVocFBXVTJwRndZIiwicGFpciI6WzQyLDM0XSwibWVtYmVyIjoiZER6RG5MdkdGRV9KcG1GWFJBN0RfMU1ibWl4eUVVd2N4YWQ4ZlZ6UkZjTSJ9",
+    "user": 42,
+    "info": {
+      "name": "Ann",
+      "_ring": "kioHwR8o8iBR1Dt746R86Myo52eAjXkA6nMTU8cOB9Q"
+    },
+    "answer": {
+      "call": "support:17",
+      "id": "40cXg8rlYEClMs-YwUOv",
+      "role": "callee",
+      "from": 42,
+      "type": "audio",
+      "ring": "kioHwR8o8iBR1Dt746R86Myo52eAjXkA6nMTU8cOB9Q"
+    },
+    "renewal": {
+      "call": "support:17",
+      "id": "40cXg8rlYEClMs-YwUOv",
+      "role": "caller",
+      "to": 34,
+      "type": "audio",
+      "member": "dDzDnLvGFE_JpmFXRA7D_1MbmixyEUwcxad8fVzRFcM"
+    },
+    "ref": "eyJpZCI6IjQwY1hnOHJsWUVDbE1zLVl3VU92IiwibmFtZSI6InN1cHBvcnQ6MTciLCJ0eXBlIjoiYXVkaW8iLCJwYWlyIjpbNDIsMzRdLCJtZW1iZXIiOiJkRHpEbkx2R0ZFX0pwbUZYUkE3RF8xTWJtaXh5RVV3Y3hhZDhmVnpSRmNNIn0"
+  },
+  "text_call": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQmpZV3hzSWl3aVkyRnNiQ0k2SW1OaGJHdzZlV3B3WWt4aE1XbGpaMUY2VmxZdE4zWm9RWGNpTENKcFpDSTZJbmxxY0dKTVlURnBZMmRSZWxaV0xUZDJhRUYzSWl3aWMzVmlJam9pZFhObGNsOHlZV0pqSWl3aWNtOXNaU0k2SW1OaGJHeGxjaUlzSW5SNWNHVWlPaUoyYVdSbGJ5SXNJblJ2SWpvek5Dd2lhVzVtYnlJNmV5SnVZVzFsSWpvaVZYTmxjaUIxYzJWeVh6SmhZbU1pTENKZmNtbHVaeUk2SWtaSloyd3hUM2s1T1dOdGF6SXhPSGxXWnpVME1rRnJkSFJ0UkV0eFZUZDRla05DVlRJeGFXOVNOelFpZlgwLjRQaHBHZDVuRDVHTWN5M3dRd3owaUV1YWE4QTRWWnhwX0F3eU1taXFSZjgiLCJleHAiOjE3OTQyMzIxOTksImNhbGwiOiJjYWxsOnlqcGJMYTFpY2dRelZWLTd2aEF3IiwiaWQiOiJ5anBiTGExaWNnUXpWVi03dmhBdyIsInRvIjozNCwidHlwZSI6InZpZGVvIiwia2V5IjoiNzZiNzcwYWIwYzI4OWE0NDUzMTgyNmI2ZGQ3ZTgwMDZjODU0YWRjZDcxNjU3YWViNDY4NGI1ZDQ4NmM0NTMwOCIsIm1lZGlhX2tleSI6Im5ETUJod3ZJQUpoTUNHbV9JR20zNkRTa0I1aUpKZm9iTGctczliVzdFMDQiLCJwYWlyIjpbInVzZXJfMmFiYyIsMzRdLCJtZW1iZXIiOiJMRGF6ZzZSV3gyYjNac1pfcFlGNFFhY0pFcThURVVaWU56blZhLVR1bkVvIn0",
+    "user": "user_2abc",
+    "info": {
+      "name": "User user_2abc",
+      "_ring": "FIgl1Oy99cmk218yVg542AkttmDKqU7xzCBU21ioR74"
+    },
+    "answer": {
+      "call": "call:yjpbLa1icgQzVV-7vhAw",
+      "id": "yjpbLa1icgQzVV-7vhAw",
+      "role": "callee",
+      "from": "user_2abc",
+      "type": "video",
+      "ring": "FIgl1Oy99cmk218yVg542AkttmDKqU7xzCBU21ioR74"
+    },
+    "renewal": {
+      "call": "call:yjpbLa1icgQzVV-7vhAw",
+      "id": "yjpbLa1icgQzVV-7vhAw",
+      "role": "caller",
+      "to": 34,
+      "type": "video",
+      "member": "LDazg6RWx2b3ZsZ_pYF4QacJEq8TEUZYNznVa-TunEo"
+    },
+    "ref": "eyJpZCI6InlqcGJMYTFpY2dRelZWLTd2aEF3IiwibmFtZSI6ImNhbGw6eWpwYkxhMWljZ1F6VlYtN3ZoQXciLCJ0eXBlIjoidmlkZW8iLCJwYWlyIjpbInVzZXJfMmFiYyIsMzRdLCJtZW1iZXIiOiJMRGF6ZzZSV3gyYjNac1pfcFlGNFFhY0pFcThURVVaWU56blZhLVR1bkVvIn0"
+  },
+  "ring_in": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQmpZV3hzSWl3aVkyRnNiQ0k2SW5OMWNIQnZjblE2TVRjaUxDSnBaQ0k2SWkxRlNHRlJOa1ZPYzNOdGFYUnNibmRXVGpKc0lpd2ljM1ZpSWpvME1pd2ljbTlzWlNJNkltTmhiR3hsY2lJc0luUjVjR1VpT2lKaGRXUnBieUlzSW5SdklqbzFOaXdpWjNKdmRYQWlPaUkwTUdOWVp6aHliRmxGUTJ4TmN5MVpkMVZQZGlJc0ltbHVabThpT25zaWJtRnRaU0k2SWxWelpYSWdORElpZlgwLmZYX253QWZZdFpLNXc2VnE5UG91SF9ibVd3VFMtRjQtUVVLdmNqdWVtd3ciLCJleHAiOjE3OTQyMzIxOTksImNhbGwiOiJzdXBwb3J0OjE3IiwiaWQiOiItRUhhUTZFTnNzbWl0bG53Vk4ybCIsInRvIjo1NiwidHlwZSI6ImF1ZGlvIiwiZ3JvdXAiOiI0MGNYZzhybFlFQ2xNcy1Zd1VPdiIsInBhaXIiOls0MiwzNF0sIm1lbWJlciI6ImREekRuTHZHRkVfSnBtRlhSQTdEXzFNYm1peHlFVXdjeGFkOGZWelJGY00iLCJyaW5nIjoiY0FfVXAyQjVyQTM2M0Y0TDdZbnFvekxseVVWLWpFYzNPZzdGVXJrMXNoUSJ9",
+    "user": 42,
+    "answer": {
+      "call": "support:17",
+      "id": "-EHaQ6ENssmitlnwVN2l",
+      "role": "callee",
+      "from": 42,
+      "type": "audio",
+      "group": "40cXg8rlYEClMs-YwUOv",
+      "pair": [
+        42,
+        34
+      ],
+      "ring": "cA_Up2B5rA363F4L7YnqozLlyUV-jEc3Og7FUrk1shQ"
+    }
+  },
+  "group_host": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQnliMjl0SWl3aWNtOXZiU0k2SW1Oc1lYTnpPamNpTENKemRXSWlPalF5TENKMGVYQmxJam9pWVhWa2FXOGlMQ0pwYm1adklqcDdJbTVoYldVaU9pSlZjMlZ5SURReUluMHNJbkIxWW14cGMyZ2lPblJ5ZFdVc0luTjFZbk5qY21saVpTSTZkSEoxWlN3aVlXUnRhVzRpT25SeWRXVXNJbWhwWkdSbGJpSTZabUZzYzJWOS5xYWgyS2F1NEN5WEh2RmdISzVDbHRDMkZNWmlWSXl0N1FFc1g5eWFYeE1RIiwiZXhwIjoxNzk0MjMyMTk5LCJyb29tIjoiY2xhc3M6NyIsInR5cGUiOiJhdWRpbyIsInVzZXIiOjQyLCJtZWRpYV9rZXkiOiJuTTU2QXlUUlplM0lQVE1fZkg0X0ZLR1lUS0NTVkxiSHpncVc0ZG9QTEFzIiwiaG9zdCI6eyJ1bnRpbCI6MTc5NDI1Mzc5OSwicHJvb2YiOiJEZGlvRWpBNHpGTU5CZVNXMktYaWtyUkd2bFNucjVXSGxIamVrUDlPVldvIn0sInJlY29yZGVyIjp7InVudGlsIjoxNzk0MjUzNzk5LCJwcm9vZiI6ImotdzZGWHdRUEpnTEwwd29HMWd3MEpqTTNLTGY0d0RjTm4wQzlZV093aVkifX0",
+    "user": 42,
+    "moderate": {
+      "moderate": "class:7",
+      "act": "mute",
+      "user": 34,
+      "host": {
+        "until": 1794253799,
+        "proof": "DdioEjA4zFMNBeSW2KXikrRGvlSnr5WHlHjekP9OVWo"
+      }
+    },
+    "record": {
+      "call": "class:7",
+      "record": "start",
+      "recorder": {
+        "until": 1794253799,
+        "proof": "j-w6FXwQPJgLL0woG1gw0JjM3KLf4wDcNn0C9YWOwiY"
+      }
+    },
+    "stop": {
+      "call": "class:7",
+      "record": "stop",
+      "recording": "rec123456",
+      "recorder": {
+        "until": 1794253799,
+        "proof": "j-w6FXwQPJgLL0woG1gw0JjM3KLf4wDcNn0C9YWOwiY"
+      }
+    }
+  },
+  "group_guest": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQnliMjl0SWl3aWNtOXZiU0k2SW1Oc1lYTnpPamNpTENKemRXSWlPaUoxYzJWeVh6SmhZbU1pTENKMGVYQmxJam9pZG1sa1pXOGlMQ0pwYm1adklqcDdJbTVoYldVaU9pSlZjMlZ5SUhWelpYSmZNbUZpWXlKOUxDSndkV0pzYVhOb0lqcDBjblZsTENKemRXSnpZM0pwWW1VaU9uUnlkV1VzSW1Ga2JXbHVJanBtWVd4elpTd2lhR2xrWkdWdUlqcG1ZV3h6WlgwLk0xU3laMkZhVEtVMGlHdVFEWU5Wdk96RkRhekJLR3VMYlRHeXlnS0hDTTAiLCJleHAiOjE3OTQyMzIxOTksInJvb20iOiJjbGFzczo3IiwidHlwZSI6InZpZGVvIiwidXNlciI6InVzZXJfMmFiYyJ9",
+    "user": "user_2abc"
+  },
+  "group_recorder": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1saGRDSTZNVGM1TkRJeE1EVTVPU3dpWlhod0lqb3hOemswTWpNeU1UazVMQ0poZFdRaU9pSjNiM0prY0d4MWN5MXlaV0ZzZEdsdFpTQnliMjl0SWl3aWNtOXZiU0k2SW1Oc1lYTnpPamNpTENKemRXSWlPak0wTENKMGVYQmxJam9pZG1sa1pXOGlMQ0pwYm1adklqcDdJbTVoYldVaU9pSlZjMlZ5SURNMEluMHNJbkIxWW14cGMyZ2lPblJ5ZFdVc0luTjFZbk5qY21saVpTSTZkSEoxWlN3aVlXUnRhVzRpT21aaGJITmxMQ0pvYVdSa1pXNGlPbVpoYkhObGZRLjJSZTlsbHY2TkRMT29VMmd6NkZYaVl2N3VCYlpXWVltcTRlQnJfOGtlTnciLCJleHAiOjE3OTQyMzIxOTksInJvb20iOiJjbGFzczo3IiwidHlwZSI6InZpZGVvIiwidXNlciI6MzQsInJlY29yZGVyIjp7InVudGlsIjoxNzk0MjUzNzk5LCJwcm9vZiI6InY3c1pudWZqMl85d1FDT2xZVXBDQ2RtZ0U2a3B0NFRNcjY0OTJPWHB3ZTAifX0",
+    "user": 34
+  },
+  "stream": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1GMVpDSTZJbXhwZG1VdGMzUnlaV0Z0SWl3aWMzUnlJam9pYzJodmR6bzNJaXdpY205c1pTSTZJbWh2YzNRaUxDSnpkV0lpT2lJME1pSXNJbTVoYldVaU9pSlZjMlZ5SURReUlpd2lhV0YwSWpveE56azBNakV3TlRrNUxDSmxlSEFpT2pFM09UUXlNVEV4T1RsOS5qcVZtY1hrbHhPdzdxR2tfOVBRdFFDZzFwRGQ4SkIwZmVIY2FMODN3VGo0IiwiZXhwIjoxNzk0MjExMTk5LCJuYW1lIjoic2hvdzo3In0",
+    "name": "show:7"
+  },
+  "stream_visitor": {
+    "token": "eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwYzNNaU9pSnpNVFV3TURBd01EQXdOeUlzSW1GMVpDSTZJbXhwZG1VdGMzUnlaV0Z0SWl3aWMzUnlJam9pYzJodmR6bzNJaXdpY205c1pTSTZJblpwWlhkbGNpSXNJbWxoZENJNk1UYzVOREl4TURVNU9Td2laWGh3SWpveE56azBNakV4TVRrNWZRLmpscjF6RVBHOUQ0bjNLc2xyRTRobC1zb3ExUV90NW4wMXMxc3lTOXlJdGciLCJleHAiOjE3OTQyMTExOTksIm5hbWUiOiJzaG93OjcifQ",
+    "name": "show:7"
+  }
+}

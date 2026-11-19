@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- libwebrtc watches the networks a call can use, and aborts the process without these. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- Calls as the phone knows them (SystemCalls). A self-managed calling app:
+         MANAGE_OWN_CALLS is what lets Telecom treat this as a call rather than an app playing audio. The ring is a
+         notification, with a full-screen intent over a locked phone, which Android 14 makes an access the person grants
+         (SystemCalls.canRingFullScreen). The running call keeps a foreground service of the phoneCall type. -->
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+
+    <application>
+        <service
+            android:name="cloud.wordplus.realtime.calls.SystemCallsService"
+            android:exported="false"
+            android:foregroundServiceType="phoneCall|microphone|camera" />
+
+        <!-- A screen shared on a call between two (ScreenShare). -->
+        <service
+            android:name="cloud.wordplus.realtime.calls.ScreenShareService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- Decline and Hang up on the notifications, with the app in any state. -->
+        <receiver
+            android:name="cloud.wordplus.realtime.calls.SystemCallsReceiver"
+            android:exported="false" />
+
+        <!-- The ring over a locked phone, and the notification's Answer: its own task, out of recents. -->
+        <activity
+            android:name="cloud.wordplus.realtime.calls.SystemCallsActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true"
+            android:taskAffinity="cloud.wordplus.realtime.calls.ring"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+    </application>
+</manifest>
